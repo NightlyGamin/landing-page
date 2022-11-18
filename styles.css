@@ -1,2 +1,19 @@
-img {width: 100px;
-    height:100px;}
+.header {
+    background-color: #1f2937;
+    display:flex; 
+    justify-content:space-between;   
+    align-items:center;
+    text-decoration: none;
+    flex-shrink:0;
+}
+
+a{ font-size: 18px;
+    color: #e5e7EB;
+    text-decoration: none;
+    padding: 10px;
+    margin:10px;
+}
+
+img {
+    height: 100px;
+    width: 100px;}
