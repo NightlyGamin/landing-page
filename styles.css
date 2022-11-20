@@ -1,9 +1,15 @@
+html {
+    width:100%;
+    height:100%;
+}
 body {
-margin:0px;
+margin: 0px;
+width: 100%;
+height: 100%;
 font-family: 'Times New Roman', Times, serif;
 }
 
-.header, .header-2, .h2-left, .h2-right, .info-header, .infopics, .image-subtext
+.header, .header-2, .h2-left, .h2-right, .info-header, .infopics, .image-subtext, .quote, .quote-author, .action, .action-box, .footer
 { display:flex; }
 
 .link-1, .link-2, .link-3 {font-size:18px;
@@ -66,7 +72,7 @@ h1 {font-size:48px;
 margin-top: -8px;
 }
 
-button {
+.main-button, .action-button {
     width:140px;
     height: 40px;
     background-color: #3882f6;
@@ -103,7 +109,7 @@ h2 {
 .infopics {
     justify-content:center;
     column-gap:30px;
-    margin:10px;
+
     padding:5px;
     width:100%;
 }
@@ -111,20 +117,82 @@ h2 {
 
 .image-subtext {
     justify-content: center;
-    margin: -8px;
-    column-gap:30px;
-    font-size:small;
+    column-gap:60px;
+    font-size:medium;
     color:#1F2937;
     text-align: center;
     width:100%;
     height:100px;
 }
-
-
-
+.image-subtext-1, .image-subtext-2, .image-subtext-3, .image-subtext-4 { width: 118px;
+    text-align:center;
+}
 
 img {
     height: auto;
     width: 150px;
     border-radius: 5%;
+}
+
+.quote {
+    background-color: #E5E7EB;
+    width:100%;
+    height:400px;
+    margin:0px;
+    padding-left:10px;
+    flex-shrink:0;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    font-style:italic;
+    color: #1F2937
+}
+
+.quote-text {
+    flex-shrink:0;
+    justify-content:center;
+    margin:0px;
+    width: 688px;
+    }
+
+.quote-author {
+    justify-content:flex-end;
+    font-style:normal;
+}
+.action {
+    color:#F9FAF8;
+    justify-content: center;
+    align-items:center;
+    height:162px;
+    width:75%;
+    margin: 100px 0px 100px 15%;
+    background-color:#3882F6;
+    border-radius: 7px;
+    
+}
+.action-box { 
+    flex-direction:column;
+  
+}
+.action-text {
+justify-content: flex-start;
+margin-top: 4px;
+}
+.button-1 {
+    margin: 0px 5% 0px 0px;
+}
+.action-button {
+    border-color:white;
+    border: 2px solid #F9FAF8 ;
+    margin-left: 79px;
+    margin-right: -50px;
+}
+.footer {
+    justify-content: center;
+    align-items:center;
+    color:#E5E7EB;
+    background-color: #1f2937;
+    height: 150px;
+    width:100%;
+
 }
